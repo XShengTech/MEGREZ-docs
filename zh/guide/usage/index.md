@@ -4,10 +4,10 @@
 
 ## 注册
 
-## 邮箱验证
+## 邮箱验证 <Badge type="warning" text="开发中" />
 
-## 修改密码
+## 修改密码 <Badge type="warning" text="开发中" />
 
-## 修改邮箱
+## 修改邮箱 <Badge type="warning" text="开发中" />
 
-## 重置密码
+## 重置密码 <Badge type="warning" text="开发中" />
