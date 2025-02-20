@@ -94,11 +94,11 @@ WARN[0000] MEGREZ-Deploy/megrez/docker-compose.yml: the attribute `version` is o
 
 打开网页后, UI 渲染效果如下
 
-![MEGREZ UI](/megrez-demo1.webp)
+![MEGREZ UI](/deploy/megrez/demo1.webp)
 
 登陆后, 效果和下面类似
 
-![MEGREZ UI](/megrez-demo2.webp)
+![MEGREZ UI](/deploy/megrez/demo2.webp)
 
 ## 下一步
 
