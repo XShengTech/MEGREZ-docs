@@ -19,7 +19,7 @@
 ## 镜像列表
 
 ::: tip 💡 提示
-如果您有其他深度学习框架的打包镜像需求, 或特殊版本, 请在 [MEGREZ 打包镜像仓库](https://github.com/XShengTech/MEGREZ-images) 中提交 issue
+如果您有其他深度学习框架或特殊版本的打包镜像需求,, 请在 [MEGREZ 打包镜像仓库](https://github.com/XShengTech/MEGREZ-images) 中提交 issue
 :::
 
 ### PyTorch
