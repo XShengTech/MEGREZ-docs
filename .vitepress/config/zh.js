@@ -148,7 +148,7 @@ export const zh = defineConfig({
           text: '最佳实践',
           collapsed: true,
           items: [
-            { text: 'Linux 基础', link: '/guide/usage/practice/' },
+            { text: 'Linux 基础', link: '/guide/usage/practice/linux' },
             { text: 'VSCode', link: '/guide/usage/practice/vscode' },
             { text: 'XShell', link: '/guide/usage/practice/xshell' },
             { text: 'Termius', link: '/guide/usage/practice/termius' },
