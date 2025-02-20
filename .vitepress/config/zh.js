@@ -75,7 +75,7 @@ export const zh = defineConfig({
           items: [
             { text: '实例状态', link: '/guide/maintenance/instances/status' },
             { text: '实例操作', link: '/guide/maintenance/instances/operate' },
-            { text: '修改配置', link: '/guide/maintenance/instances/resume' },
+            { text: '调整配置', link: '/guide/maintenance/instances/resume' },
             { text: '删除实例', link: '/guide/maintenance/instances/delete' },
           ]
         },
