@@ -24,13 +24,15 @@
 
 ### PyTorch
 
-* `pytorch-1.8.1_cuda-11.1_python-3.8_ubuntu-20.04`: PyTorch 1.8.1, CUDA 11.1, Python 3.8, Ubuntu 20.04
-* `pytorch-1.10.2_cuda-11.1_python-3.9_ubuntu-20.04`: PyTorch 1.10.2, CUDA 11.1, Python 3.9, Ubuntu 20.04
-* `pytorch-1.13.1_cuda-11.7_python-3.10_ubuntu-22.04`: PyTorch 1.13.1, CUDA 11.7, Python 3.10, Ubuntu 22.04
-* `pytorch-2.0.1_cuda-11.8_python-3.10_ubuntu-22.04`: PyTorch 2.0.1, CUDA 11.8, Python 3.10, Ubuntu 22.04
-* `pytorch-2.1.2_cuda-12.1_python-3.10_ubuntu-22.04`: PyTorch 2.1.2, CUDA 12.1, Python 3.10, Ubuntu 22.04
-* `pytorch-2.3.1_cuda-12.1_python-3.11_ubuntu-22.04`: PyTorch 2.3.1, CUDA 12.1, Python 3.11, Ubuntu 22.04
-* `pytorch-2.4.0_cuda-12.1_python-3.12_ubuntu-22.04`: PyTorch 2.4.0, CUDA 12.1, Python 3.12, Ubuntu 22.04
+| 镜像标签 | PyTorch | CUDA | Python | Ubuntu |
+| --- | ------- | ---- | ------ | ------ |
+| pytorch-1.8.1_cuda-11.1_python-3.8_ubuntu-20.04 | 1.8.1 | 11.1 | 3.8 | 20.04 |
+| pytorch-1.10.2_cuda-11.1_python-3.9_ubuntu-20.04 | 1.10.2 | 11.1 | 3.9 | 20.04 |
+| pytorch-1.13.1_cuda-11.7_python-3.10_ubuntu-22.04 | 1.13.1 | 11.7 | 3.10 | 22.04 |
+| pytorch-2.0.1_cuda-11.8_python-3.10_ubuntu-22.04 | 2.0.1 | 11.8 | 3.10 | 22.04 |
+| pytorch-2.1.2_cuda-12.1_python-3.10_ubuntu-22.04 | 2.1.2 | 12.1 | 3.10 | 22.04 |
+| pytorch-2.3.1_cuda-12.1_python-3.11_ubuntu-22.04 | 2.3.1 | 12.1 | 3.11 | 22.04 |
+| pytorch-2.4.0_cuda-12.1_python-3.12_ubuntu-22.04 | 2.4.0 | 12.1 | 3.12 | 22.04 |
 
 ### TensorFlow
 
@@ -38,4 +40,6 @@
 
 ### Ubuntu
 
-* `ubuntu-22.04`: Ubuntu 22.04, 仅包含基础环境（MiniConda、CodeServer、Jupter Notebook、性能监控）, 没有安装任何深度学习框架、CUDA/cuDNN 等
+| 镜像标签 | 说明 |
+| --- | --- |
+| ubuntu-22.04 | 仅包含基础环境（MiniConda、CodeServer、Jupter Notebook、性能监控）, 没有安装任何深度学习框架、CUDA/cuDNN 等 |
