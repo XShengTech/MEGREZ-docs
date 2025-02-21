@@ -114,7 +114,9 @@ export const zh = defineConfig({
             { text: '概要', link: '/guide/usage/instances/' },
             { text: 'SSH', link: '/guide/usage/instances/ssh' },
             { text: '在线 VSCode', link: '/guide/usage/instances/code-server' },
-            { text: 'Jupter Notebook', link: '/guide/usage/instances/jupter-notebook' },
+            { text: 'Jupter Notebook', link: '/guide/usage/instances/jupter-lab' },
+            { text: '性能监控', link: '/guide/usage/instances/monitor' },
+            { text: '升降配置', link: '/guide/usage/instances/resume' },
           ],
         },
         {
