@@ -12,6 +12,6 @@ Jupyter Lab 的工作目录为 `/root` 目录，而非 `/` 系统根目录
 
 ![Juper Lab 登录](/guide/usage/instances/jupter-lab2.webp)
 
-显示该界面即登陆成功
+显示该界面即登陆成功。Jupyter Lab 使用方式与本地相同
 
 ![Juper Lab 界面](/guide/usage/instances/jupter-lab3.webp)
