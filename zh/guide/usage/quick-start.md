@@ -19,3 +19,10 @@ MEGREZ 实例中的数据（包括环境）在关机后将全部保存，开机�
 创建成功后如图所示：
 
 ![创建成功](/guide/usage/quick-start3.webp)
+
+## 下一步
+
+* [SSH](/guide/usage/instances/ssh)
+* [上传数据](/guide/usage/data/upload)
+* [下载数据](/guide/usage/data/download)
+* [常见问题](/guide/usage/faq)

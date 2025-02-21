@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 import { zh } from './config/zh'
 
 export default defineConfig({
-  title: "MEGREZ 天权",
+  title: "MEGREZ 天权 - 文档",
   description: "算能聚联开源计算平台",
   lastUpdated: true,
   rewrites: {
@@ -12,6 +12,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+  cleanUrls: true,
   themeConfig: {
     siteTitle: false,
     logo: '/logo-text.webp',

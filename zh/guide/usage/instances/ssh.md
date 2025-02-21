@@ -10,7 +10,7 @@
 
 ![SSH 信息](/guide/usage/instances/ssh1.webp)
 
-打开终端，输入`ssh root@ip地址 -p 端口`。例如，此时应当输入
+打开终端，输入`ssh root@ip地址 -p 端口`。例如，此时应当输入 `ssh root@11.80.7.31 -p 35748`
 
 ![SSH 登录](/guide/usage/instances/ssh2.webp)
 
