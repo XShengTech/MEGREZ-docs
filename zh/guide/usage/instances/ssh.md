@@ -6,7 +6,7 @@
 如果是 Mac/Linux 用户，可以使用系统自带的 Terminal 完成 SSH 登录。如果要更好的终端体验推荐下载使用 [Termius](/guide/usage/practice/termius) 工具。
 :::
 
-开机实例后，复制主机的IP地址、SSH端口与密码
+开机实例后，复制实例的IP地址、SSH端口与密码
 
 ![SSH 信息](/guide/usage/instances/ssh1.webp)
 
