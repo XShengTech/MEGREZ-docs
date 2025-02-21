@@ -14,7 +14,7 @@ hero:
       link: /deploy/
     - theme: alt
       text: 使用教程
-      link: /guide/
+      link: /guide/usage/
   image:
     src: /logo.webp
     alt: MEGREZ Logo
