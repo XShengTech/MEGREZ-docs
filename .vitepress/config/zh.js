@@ -155,6 +155,7 @@ export const zh = defineConfig({
             { text: 'XShell', link: '/guide/usage/practice/xshell' },
             { text: 'Termius', link: '/guide/usage/practice/termius' },
             { text: 'Filezilla', link: '/guide/usage/practice/filezilla' },
+            { text: '性能调优', link: '/guide/usage/practice/performance' },
           ],
         },
         { text: '常见问题', link: '/guide/usage/faq' },
