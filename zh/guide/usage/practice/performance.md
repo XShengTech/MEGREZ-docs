@@ -22,6 +22,8 @@
 
 例如从这个GPU 使用率的图中，波动很大，说明训练效率不高。
 
+通常这种情况是因为 CPU 在进行数据处理时的效率不高，导致 GPU 等待数据。所以可以提高 `num_workers` 的值，或者适当调整 `batch_size` 的值。
+
 ![低训练效率](/guide/usage/practice/performance1.webp)
 
 此时，观察 CPU 使用率，如果 CPU 使用率不高，且内存占用不高，说明 CPU 是瓶颈，此时可以尝试增加 `num_workers` 的值。如果 CPU 使用率很高，说明 CPU 不是瓶颈，此时可以尝试调整 `batch_size` 的值。
