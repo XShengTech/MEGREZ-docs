@@ -126,7 +126,7 @@ export const zh = defineConfig({
             { text: '概要', link: '/guide/usage/data/' },
             { text: '上传数据', link: '/guide/usage/data/upload' },
             { text: '下载数据', link: '/guide/usage/data/download' },
-            { text: '扩缩容量', link: '/guide/usage/data/drivers' },
+            { text: '扩缩容量', link: '/guide/usage/data/resize' },
           ],
         },
         {
