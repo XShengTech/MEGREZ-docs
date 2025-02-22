@@ -164,7 +164,7 @@ export const zh = defineConfig({
         {
           text: '关于',
           items: [
-            { text: '关于我们', link: '/about' },
+            { text: '什么是 MEGREZ？', link: '/about' },
             { text: '联系我们', link: '/about/contact' },
           ],
         }
