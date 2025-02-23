@@ -57,7 +57,7 @@ service lxcfs restart
 ## 实例运行一段时间后, 运行 `nvidia-smi` 报错 `Failed to initialize NVML: Unknown Error`
 
 :::tip 💡 提示
-在使用 v0.1.0 之前的版本, 可能会出现这个问题。如果在使用 v0.1.0 之后的版本, 在输入下方命令后仍然出现这个问题, 请在 [XShengTech/gpu-docker-api](https://github.com/XShengTech/gpu-docker-api/issues) 仓库提交 issue
+在使用 v0.1.0 之前的版本, 可能会出现这个问题。v0.1.0 之后的版本，MEGREZ 已经进行尝试性修复，如果在使用 v0.1.0 之后的版本, 在输入下方命令后仍然出现这个问题, 请在 [XShengTech/gpu-docker-api](https://github.com/XShengTech/gpu-docker-api/issues) 仓库提交 issue
 :::
 
 * 相关问题: [NVIDIA/nvidia-container-toolkit#48](https://github.com/NVIDIA/nvidia-container-toolkit/issues/48)
