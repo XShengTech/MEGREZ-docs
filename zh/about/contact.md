@@ -7,6 +7,8 @@
 
 ## 飞书开源交流群
 
+[点击加入飞书交流群](https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=162v2304-4020-4c0a-af96-2b3caa5d4da6)
+
 <img src="/about/feishu.webp" alt="飞书群" style="width: 100%; max-width: 320px;">
 
 ## 学术研究
