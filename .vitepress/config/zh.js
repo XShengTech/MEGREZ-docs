@@ -14,7 +14,7 @@ export const zh = defineConfig({
           { text: '用户手册', link: '/guide/usage/', activeMatch: '/guide/usage/' },
         ]
       },
-      { text: '关于', link: '/about/' },
+      { text: '关于', link: '/about/', activeMatch: '/about/' },
     ],
 
     sidebar: {
