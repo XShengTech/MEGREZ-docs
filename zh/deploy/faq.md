@@ -1,5 +1,7 @@
 # 常见问题
 
+[[toc]]
+
 ## 配置 Docker 镜像加速
 
 修改 `/etc/docker/daemon.json` 添加 `registry-mirrors` 字段。示例为 1Panel 的镜像加速地址, 可根据实际情况修改。
