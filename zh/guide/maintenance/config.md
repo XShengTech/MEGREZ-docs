@@ -19,9 +19,17 @@ database:
 redis:
   host: megrez-redis
   port: 6379
+smtp:
+  host:
+  port:
+  user:
+  password:
+  ssl: false
 system:
+  base_url: 
   verify: false
   mount_dir: 
+
 ```
 
 以下是各个配置项的说明：
@@ -84,9 +92,37 @@ Redis 的主机地址。默认是 `megrez-redis`
 
 Redis 的端口。默认是 `6379`
 
+## smtp
+
+> SMTP 邮件服务相关配置
+
+### `host`
+
+SMTP 邮件服务的主机地址。默认是空
+
+### `port`
+
+SMTP 邮件服务的端口。默认是空
+
+### `user`
+
+SMTP 邮件服务的邮箱账户。默认是空
+
+### `password`
+
+SMTP 邮件服务的邮箱密码（在大部分平台上是授权码）。默认是空
+
+### `ssl`
+
+是否开启 TLS 加密。默认是 `false`
+
 ## system
 
 > 系统相关配置
+
+### `base_url`
+
+系统的基础 URL, 用于生成链接。默认是空
 
 ### `verify`
 
