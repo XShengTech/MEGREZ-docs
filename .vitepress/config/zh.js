@@ -180,5 +180,10 @@ export const zh = defineConfig({
       label: '页面导航',
       level: [2, 3]
     },
+
+    editLink: {
+      pattern: 'https://github.com/XShengTech/MEGREZ-docs/edit/main/:path',
+      text: '在 GitHub 上编辑此页'
+    }
   },
 })
