@@ -1,3 +1,11 @@
+---
+outline: 2
+markdown:
+  toc:
+    level:
+      - 2
+---
+
 # 常见问题
 
 [[toc]]

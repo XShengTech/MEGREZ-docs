@@ -1,3 +1,7 @@
+---
+outline: 2
+---
+
 # 常见问题
 
 [[toc]]
@@ -68,4 +72,40 @@ service lxcfs restart
 
 ```bash
 sudo nvidia-ctk system create-dev-char-symlinks --create-all
+```
+
+## `nvidia-smi` 命令需要很久才能执行完成
+
+NVIDIA 的 Persistenced 服务未启动
+
+### 临时解决办法
+
+```bash
+sudo nvidia-persistenced --persistence-mode
+```
+
+### 永久解决办法
+
+添加以下内容至 `/etc/systemd/system/nvidia-persistenced.service`
+
+```ini
+[Unit]
+Description=NVIDIA Persistence Daemon
+Wants=syslog.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/nvidia-persistenced
+ExecStopPost=/bin/rm -rf /var/run/nvidia-persistenced
+
+[Install]
+WantedBy=multi-user.target
+```
+
+然后执行以下命令
+
+```bash
+systemctl daemon-reload
+systemctl enable nvidia-persistenced
+systemctl start nvidia-persistenced
 ```

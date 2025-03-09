@@ -85,7 +85,11 @@ export default defineConfig({
     }
   },
 
-  markdown: {},
+  markdown: {
+    toc: {
+      level: [ 2 ],
+    }
+  },
 
   vite: {
     plugins: []
