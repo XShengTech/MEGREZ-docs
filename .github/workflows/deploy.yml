@@ -1,4 +1,4 @@
-name: Cloudflare Pages Deploy
+name: Qiniu Deploy
 on:
   push:
     branches:
@@ -21,11 +21,27 @@ jobs:
           node-version: 20.17.0
 
       - name: Build
-        run: npm install && npm run docs:build
+        run: |
+          npm install
+          npm run docs:build
+          cp $PWD/.vitepress/dist/404.html $PWD/.vitepress/dist/errno-404
 
-      - name: Deploy Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: 'pages deploy .vitepress/dist --project-name=${{ secrets.CF_PROJECT_NAME }} --branch=main'
+      - name: Deply
+        run: |
+          wget https://github.com/qiniu/qshell/releases/download/v2.16.0/qshell-v2.16.0-linux-amd64.tar.gz && tar -zxvf qshell-v2.16.0-linux-amd64.tar.gz && chmod +x qshell
+          ./qshell account $QINIU_AK $QINIU_SK $QINIU_BUCKET
+          ./qshell listbucket $QINIU_BUCKET -o filelist.txt
+          ./qshell batchdelete --force $QINIU_BUCKET -i filelist.txt || true
+          ./qshell qupload2 --src-dir=$PWD/.vitepress/dist --bucket=$QINIU_BUCKET --overwrite --thread-count=8
+        env:
+          QINIU_AK: ${{ secrets.QINIU_AK }}
+          QINIU_SK: ${{ secrets.QINIU_SK }}
+          QINIU_BUCKET: ${{ secrets.QINIU_BUCKET }}
+
+      - name: Refresh
+        run: |
+          TOKEN=`echo "/v2/tune/refresh" | openssl dgst -binary -hmac $QINIU_SK -sha1 | base64 | tr + - | tr / _`
+          curl -X POST -H "Authorization: QBox $QINIU_AK:$TOKEN" http://fusion.qiniuapi.com/v2/tune/refresh -d '{"dirs":["https://docs.megrez.xsheng-ai.com/"]}' -H 'Content-Type: application/json'
+        env:
+          QINIU_AK: ${{ secrets.QINIU_AK }}
+          QINIU_SK: ${{ secrets.QINIU_SK }}
