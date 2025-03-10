@@ -25,8 +25,10 @@
 ::: tip 💡 提示
 该内核模块目前在以下环境测试通过，其他环境可能需要自测试
 
+- Ubuntu 20.04, kernel 5.4.0-153 x64, docker 28.0.1, NVIDIA driver 535.171.04
+- Ubuntu 20.04, kernel 5.4.0-208 x64, docker 28.0.1, NVIDIA driver 550.135
 - Ubuntu 22.04, kernel 5.15.0-125 x64, docker 27.5.0, NVIDIA driver 550.135
-- Ubuntu 22.04, kernel 5.15.0-133 x64, docker 28.0.1, NVIDIA driver 550.135
+- Ubuntu 22.04, kernel 5.15.0-134 x64, docker 28.0.1, NVIDIA driver 550.135
 - Ubuntu 24.04, kernel 6.8.0-55 x64, docker 28.0.1, NVIDIA driver 550.135
 - Ubuntu 24.04, kernel 6.8.0-55 x64, docker 28.0.1, NVIDIA driver 570.124.04
 :::
