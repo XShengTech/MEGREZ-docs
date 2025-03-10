@@ -38,6 +38,7 @@ export const zh = defineConfig({
           items: [
             { text: '检查状态', link: '/deploy/controler/check' },
             { text: '部署', link: '/deploy/controler/' },
+            { text: '容器 PID 映射', link: '/deploy/controler/mpu' },
           ],
         },
         {

@@ -322,6 +322,7 @@ docker pull xshengtech/megrez:ubuntu-22.04
 
 ## 下一步
 
+* [容器 PID 映射](/deploy/controler/mpu)
 * [运维说明](/guide/maintenance/)
 * [镜像介绍](/deploy/images)
 * [常见问题](/deploy/faq)

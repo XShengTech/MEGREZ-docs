@@ -88,6 +88,10 @@ service grafana-server restart
 
 ## `nvidia-smi` 没有显示占用 GPU 的进程的 pid 怎么办
 
+::: tip 💡 提示
+如果您是系统管理员，可尝试此特性 [容器 PID 映射](/deploy/controler/mpu)
+:::
+
 ```bash
 ps aux | grep python
 ```
