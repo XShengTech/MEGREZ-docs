@@ -128,14 +128,19 @@ commit: cb82e29c75d387992bf59eb6eadf5d96cb6d4747
 
 ### 配置 XFS 分区
 
+::: danger ❗危险
+此操作会清除分区上的所有数据, 请提前备份数据
+:::
+
 ```bash
 sudo mkfs.xfs /dev/sdb    # 例如 /dev/sdb
 ```
 
 修改 `/etc/fstab` 添加 XFS 分区
 
-> [!IMPORTANT]
-> 一定要添加 `prjquota` 参数, `/path/to/docker/data` 修改为 XFS 分区实际挂载路径
+::: warning ⚠️ 重要
+一定要添加 `prjquota` 参数, `/path/to/docker/data` 修改为 XFS 分区实际挂载路径
+:::
 
 ```bash
 /dev/sdb /path/to/docker/data xfs defaults,prjquota 0 0
