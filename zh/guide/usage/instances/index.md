@@ -12,7 +12,9 @@
 
 * 系统盘：根目录 `/` 及其以下所有路径（特殊路径除外），大小为 30GB，通常为本地盘，性能较快。实例关机后数据不会丢失。
 * 数据盘：路径为 `/root/megrez-tmp`，初始大小为 50GB，可扩容，通常为本地盘，性能较快。实例关机后数据不会丢失。
-* 公共盘：路径为 `/root/megrez-pub`，在开源版下为实例所在[宿主机的本地路径](/guide/maintenance/config.html#mount-dir)，可能为本地盘，也可能为网络盘。在商业版下为对象存储网络盘。
+* 公共盘：
+  * 路径为 `/root/megrez-mnt`，在开源版下为实例所在[宿主机的本地路径](/guide/maintenance/config.html#mount-dir)，可能为本地盘，也可能为网络盘。
+  * 路径为 `/root/megrez-pub`，在商业版下为对象存储网络盘。
 
 ## 实例 GPU/CPU/内存的分配
 
