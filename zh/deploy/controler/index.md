@@ -33,6 +33,8 @@ NVIDIA Driver 请安装版本大于 ≥ 550.135 的版本, 以修复安全问题
 
 [NVIDIA Linux Driver](https://www.nvidia.com/en-us/drivers/unix/)
 
+[NVIDIA Linux Driver Archive](https://www.nvidia.com/en-us/drivers/unix/linux-amd64-display-archive/)
+
 ### 安装 NVIDIA Container Toolkit
 
 ::: warning ⚠️ 重要
