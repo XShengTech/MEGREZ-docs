@@ -326,6 +326,7 @@ docker pull xshengtech/megrez:pytorch-2.3.1_cuda-12.1_python-3.11_ubuntu-22.04
 docker pull xshengtech/megrez:pytorch-2.4.0_cuda-12.1_python-3.12_ubuntu-22.04
 docker pull xshengtech/megrez:pytorch-2.6.0_cuda-12.6_python-3.12_ubuntu-22.04
 docker pull xshengtech/megrez:pytorch-2.8.0_cuda-12.8_python-3.12_ubuntu-22.04
+docker pull xshengtech/megrez:pytorch-2.9.1_cuda-12.9_python-3.13_ubuntu-22.04
 docker pull xshengtech/megrez:ubuntu-22.04
 ```
 
